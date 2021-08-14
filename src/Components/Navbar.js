@@ -3,10 +3,11 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+import BurstModeIcon from "@material-ui/icons/BurstMode";
 import { Avatar, makeStyles } from "@material-ui/core";
 
-const marginR = 24;
+const marginR = 4;
+const drawerWidth = 240;
 
 const useStyles = makeStyles({
   toolbar: {
@@ -14,6 +15,9 @@ const useStyles = makeStyles({
   },
   menubutton: {
     marginRight: marginR
+  },
+  appbar: {
+    width: `calc(100% - ${drawerWidth}px)`
   }
 });
 
@@ -21,7 +25,7 @@ function Navbar() {
   const classes = useStyles();
   return (
     <div>
-      <AppBar elevation="1">
+      <AppBar className={classes.appbar} elevation="1">
         <Toolbar>
           <IconButton
             edge="start"
@@ -29,7 +33,7 @@ function Navbar() {
             color="inherit"
             aria-label="menu"
           >
-            <MenuIcon />
+            <BurstModeIcon />
           </IconButton>
           <Typography className={classes.toolbar}>Image Gallery</Typography>
           <Typography>Sandip &nbsp;</Typography>
