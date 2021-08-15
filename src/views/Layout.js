@@ -1,15 +1,25 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
-import Card from "../Components/Card";
+import Content from "../Components/Content";
 import Footer from "../Components/Footer";
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles({
+  distance: {
+    display: "flex"
+  }
+});
 
 function Layout() {
+  const classes = useStyles();
   return (
-    <div>
+    <div className="layout">
       <Navbar />
-      <Sidebar />
-      <Card />
+      <div className={classes.distance}>
+        <Sidebar />
+        <Content />
+      </div>
       <Footer />
     </div>
   );
