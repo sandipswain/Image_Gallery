@@ -5,27 +5,35 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import BurstModeIcon from "@material-ui/icons/BurstMode";
 import { Avatar, makeStyles } from "@material-ui/core";
+import theme from "../theme";
 
 const marginR = 4;
 const drawerWidth = 240;
 
-const useStyles = makeStyles({
-  toolbar: {
+const useStyles = makeStyles((theme) => ({
+  tool: {
     flexGrow: 1
   },
   menubutton: {
     marginRight: marginR
   },
   appbar: {
-    width: `calc(100% - ${drawerWidth}px)`
-  }
-});
+    width: `calc(100% - ${drawerWidth}px)`,
+    marginLeft: drawerWidth
+  },
+  toolbar: theme.mixins.toolbar
+}));
 
 function Navbar() {
   const classes = useStyles();
   return (
     <div>
-      <AppBar className={classes.appbar} elevation="1">
+      <AppBar
+        className={classes.appbar}
+        elevation={1}
+        position="fixed"
+        color="primary"
+      >
         <Toolbar>
           <IconButton
             edge="start"
@@ -35,11 +43,12 @@ function Navbar() {
           >
             <BurstModeIcon />
           </IconButton>
-          <Typography className={classes.toolbar}>Image Gallery</Typography>
+          <Typography className={classes.tool}>Image Gallery</Typography>
           <Typography>Sandip &nbsp;</Typography>
           <Avatar src="/avatar.jpg" />
         </Toolbar>
       </AppBar>
+      <div className={classes.toolbar}></div>
     </div>
   );
 }

@@ -1,7 +1,18 @@
-import { createMuiTheme } from "@material-ui/core";
+import { createMuiTheme } from "@material-ui/core/styles";
+import { purple } from "@material-ui/core/colors";
 
-const theme = createMuiTheme({
+export default createMuiTheme({
+  palette: {
+    primary: {
+      main: "#fedede"
+    },
+    secondary: { main: "#f44336" }
+  },
   typography: {
-    fontFamily: "Nunito"
+    fontFamily: "Nunito",
+    fontWeightBold: "700",
+    body2: {
+      fontFamily: "Comic Sans MS"
+    }
   }
 });

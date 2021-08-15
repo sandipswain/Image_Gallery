@@ -2,3 +2,19 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.left {
+  right: 8rem;
+  width: 100%;
+  /* background-color: #ddd; */
+}
+
+.layout {
+  background-color: #ddd;
+}
