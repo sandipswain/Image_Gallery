@@ -5,7 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import BurstModeIcon from "@material-ui/icons/BurstMode";
 import { Avatar, makeStyles } from "@material-ui/core";
-import theme from "../theme";
 
 const marginR = 4;
 const drawerWidth = 240;

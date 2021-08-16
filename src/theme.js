@@ -14,7 +14,7 @@ export default createMuiTheme({
     fontWeightBold: "700",
     body2: {
       fontFamily: "Comic Sans MS",
-      fontSize: "1rem"
+      fontSize: ".8rem"
     }
   },
   shape: {

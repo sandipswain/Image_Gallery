@@ -8,7 +8,6 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ShareIcon from "@material-ui/icons/Share";
-import theme from "../theme";
 
 const useStyles = makeStyles((theme) => ({
   root: {
