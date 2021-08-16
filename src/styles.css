@@ -15,6 +15,11 @@
   /* background-color: #ddd; */
 }
 
+.centerAlign {
+  /* background-color: #ddd; */
+  margin: 0 auto;
+}
+
 .layout {
   background-color: #ddd;
 }

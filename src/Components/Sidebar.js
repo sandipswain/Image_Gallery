@@ -16,7 +16,8 @@ const useStyles = makeStyles({
     width: drawerWidth
   },
   drawerPaper: {
-    width: drawerWidth
+    width: drawerWidth,
+    backgroundColor: "#ffdd72"
   },
   centerAlign: {
     textAlign: "center",

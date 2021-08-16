@@ -27,12 +27,8 @@ function Footer() {
           elevation={0}
         >
           <Toolbar>
-            <Typography
-              className={classes.centerAlign}
-              variant="body1"
-              color="inherit"
-            >
-              Copyright @ 2021 Sandip
+            <Typography className="centerAlign" variant="body1" color="inherit">
+              Copyright @ 2021, Sandip
             </Typography>
           </Toolbar>
         </AppBar>
